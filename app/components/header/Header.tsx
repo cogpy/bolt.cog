@@ -27,6 +27,14 @@ export function Header() {
       <span className="flex-1 px-4 truncate text-center text-bolt-elements-textPrimary">
         <ClientOnly>{() => <ChatDescription />}</ClientOnly>
       </span>
+      <a
+        href="/dte"
+        className="mr-3 text-sm text-bolt-elements-textSecondary hover:text-accent"
+        title="Open Deep Tree Echo Device Manager"
+      >
+        <span className="i-ph:cpu-duotone mr-1 inline-block" aria-hidden="true" />
+        DTE Workspace
+      </a>
       {chat.started && (
         <ClientOnly>
           {() => (
